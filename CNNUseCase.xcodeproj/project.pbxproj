@@ -14,6 +14,23 @@
 		6767659D28CEB93C00DB6C85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6767659C28CEB93C00DB6C85 /* Preview Assets.xcassets */; };
 		676765A828CEB97600DB6C85 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676765A728CEB97600DB6C85 /* MenuView.swift */; };
 		676765AA28CEB9A700DB6C85 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676765A928CEB9A700DB6C85 /* ExtensionDelegate.swift */; };
+		6791C87428CEBD7400033A23 /* AEPOptimize in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C87328CEBD7400033A23 /* AEPOptimize */; };
+		6791C87728CEBD8100033A23 /* AEPUserProfile in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C87628CEBD8100033A23 /* AEPUserProfile */; };
+		6791C87A28CEBD9200033A23 /* AEPEdgeConsent in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C87928CEBD9200033A23 /* AEPEdgeConsent */; };
+		6791C87D28CEBD9E00033A23 /* AEPEdge in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C87C28CEBD9E00033A23 /* AEPEdge */; };
+		6791C88028CEBDAC00033A23 /* AEPEdgeIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C87F28CEBDAC00033A23 /* AEPEdgeIdentity */; };
+		6791C88328CEBDBA00033A23 /* AEPMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C88228CEBDBA00033A23 /* AEPMessaging */; };
+		6791C88628CEBDE000033A23 /* AEPCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C88528CEBDE000033A23 /* AEPCore */; };
+		6791C88828CEBDE000033A23 /* AEPIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C88728CEBDE000033A23 /* AEPIdentity */; };
+		6791C88A28CEBDE000033A23 /* AEPLifecycle in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C88928CEBDE000033A23 /* AEPLifecycle */; };
+		6791C88C28CEBDE000033A23 /* AEPServices in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C88B28CEBDE000033A23 /* AEPServices */; };
+		6791C88E28CEBDE000033A23 /* AEPSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C88D28CEBDE000033A23 /* AEPSignal */; };
+		6791C89028CEBDE500033A23 /* AEPAssurance in Frameworks */ = {isa = PBXBuildFile; productRef = 6791C88F28CEBDE500033A23 /* AEPAssurance */; };
+		6791C89328CEBDF100033A23 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6791C89128CEBDF100033A23 /* UserNotificationsUI.framework */; };
+		6791C89428CEBDF100033A23 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6791C89228CEBDF100033A23 /* UserNotifications.framework */; };
+		6791C89628CEBDFB00033A23 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6791C89528CEBDFB00033A23 /* WatchKit.framework */; };
+		6791C89828CEBE2F00033A23 /* CoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791C89728CEBE2F00033A23 /* CoreView.swift */; };
+		6791C89A28CEBE6800033A23 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791C89928CEBE6800033A23 /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +68,11 @@
 		676765A928CEB9A700DB6C85 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		676765AC28CEBA2900DB6C85 /* aepsdk-core-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "aepsdk-core-ios"; path = "../SDKs/aepsdk-core-ios"; sourceTree = "<group>"; };
 		676765B028CEBAD200DB6C85 /* aepsdk-assurance-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "aepsdk-assurance-ios"; path = "../SDKs/aepsdk-assurance-ios"; sourceTree = "<group>"; };
+		6791C89128CEBDF100033A23 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.0.sdk/System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = DEVELOPER_DIR; };
+		6791C89228CEBDF100033A23 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.0.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		6791C89528CEBDFB00033A23 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		6791C89728CEBE2F00033A23 /* CoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreView.swift; sourceTree = "<group>"; };
+		6791C89928CEBE6800033A23 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6791C87728CEBD8100033A23 /* AEPUserProfile in Frameworks */,
+				6791C87A28CEBD9200033A23 /* AEPEdgeConsent in Frameworks */,
+				6791C88628CEBDE000033A23 /* AEPCore in Frameworks */,
+				6791C89628CEBDFB00033A23 /* WatchKit.framework in Frameworks */,
+				6791C88828CEBDE000033A23 /* AEPIdentity in Frameworks */,
+				6791C88328CEBDBA00033A23 /* AEPMessaging in Frameworks */,
+				6791C88C28CEBDE000033A23 /* AEPServices in Frameworks */,
+				6791C89428CEBDF100033A23 /* UserNotifications.framework in Frameworks */,
+				6791C88028CEBDAC00033A23 /* AEPEdgeIdentity in Frameworks */,
+				6791C87D28CEBD9E00033A23 /* AEPEdge in Frameworks */,
+				6791C87428CEBD7400033A23 /* AEPOptimize in Frameworks */,
+				6791C88A28CEBDE000033A23 /* AEPLifecycle in Frameworks */,
+				6791C88E28CEBDE000033A23 /* AEPSignal in Frameworks */,
+				6791C89328CEBDF100033A23 /* UserNotificationsUI.framework in Frameworks */,
+				6791C89028CEBDE500033A23 /* AEPAssurance in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +107,7 @@
 				676765AB28CEBA2900DB6C85 /* Packages */,
 				6767659428CEB93B00DB6C85 /* CNNUseCase Watch App */,
 				6767658B28CEB93B00DB6C85 /* Products */,
+				6791C88428CEBDE000033A23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,8 +127,10 @@
 				676765A728CEB97600DB6C85 /* MenuView.swift */,
 				6767659728CEB93B00DB6C85 /* ContentView.swift */,
 				676765A928CEB9A700DB6C85 /* ExtensionDelegate.swift */,
+				6791C89728CEBE2F00033A23 /* CoreView.swift */,
 				6767659928CEB93C00DB6C85 /* Assets.xcassets */,
 				6767659B28CEB93C00DB6C85 /* Preview Content */,
+				6791C89928CEBE6800033A23 /* ButtonStyle.swift */,
 			);
 			path = "CNNUseCase Watch App";
 			sourceTree = "<group>";
@@ -110,6 +150,16 @@
 				676765B028CEBAD200DB6C85 /* aepsdk-assurance-ios */,
 			);
 			name = Packages;
+			sourceTree = "<group>";
+		};
+		6791C88428CEBDE000033A23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6791C89528CEBDFB00033A23 /* WatchKit.framework */,
+				6791C89228CEBDF100033A23 /* UserNotifications.framework */,
+				6791C89128CEBDF100033A23 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +195,20 @@
 			dependencies = (
 			);
 			name = "CNNUseCase Watch App";
+			packageProductDependencies = (
+				6791C87328CEBD7400033A23 /* AEPOptimize */,
+				6791C87628CEBD8100033A23 /* AEPUserProfile */,
+				6791C87928CEBD9200033A23 /* AEPEdgeConsent */,
+				6791C87C28CEBD9E00033A23 /* AEPEdge */,
+				6791C87F28CEBDAC00033A23 /* AEPEdgeIdentity */,
+				6791C88228CEBDBA00033A23 /* AEPMessaging */,
+				6791C88528CEBDE000033A23 /* AEPCore */,
+				6791C88728CEBDE000033A23 /* AEPIdentity */,
+				6791C88928CEBDE000033A23 /* AEPLifecycle */,
+				6791C88B28CEBDE000033A23 /* AEPServices */,
+				6791C88D28CEBDE000033A23 /* AEPSignal */,
+				6791C88F28CEBDE500033A23 /* AEPAssurance */,
+			);
 			productName = "CNNUseCase Watch App";
 			productReference = 6767659028CEB93B00DB6C85 /* CNNUseCase Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +240,14 @@
 				Base,
 			);
 			mainGroup = 6767658328CEB93B00DB6C85;
+			packageReferences = (
+				6791C87228CEBD7400033A23 /* XCRemoteSwiftPackageReference "aepsdk-optimize-ios" */,
+				6791C87528CEBD8100033A23 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */,
+				6791C87828CEBD9200033A23 /* XCRemoteSwiftPackageReference "aepsdk-edgeconsent-ios" */,
+				6791C87B28CEBD9E00033A23 /* XCRemoteSwiftPackageReference "aepsdk-edge-ios" */,
+				6791C87E28CEBDAC00033A23 /* XCRemoteSwiftPackageReference "aepsdk-edgeidentity-ios" */,
+				6791C88128CEBDBA00033A23 /* XCRemoteSwiftPackageReference "aepsdk-messaging-ios" */,
+			);
 			productRefGroup = 6767658B28CEB93B00DB6C85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -212,6 +284,8 @@
 			files = (
 				6767659828CEB93B00DB6C85 /* ContentView.swift in Sources */,
 				676765A828CEB97600DB6C85 /* MenuView.swift in Sources */,
+				6791C89828CEBE2F00033A23 /* CoreView.swift in Sources */,
+				6791C89A28CEBE6800033A23 /* ButtonStyle.swift in Sources */,
 				676765AA28CEB9A700DB6C85 /* ExtensionDelegate.swift in Sources */,
 				6767659628CEB93B00DB6C85 /* CNNUseCaseApp.swift in Sources */,
 			);
@@ -462,6 +536,114 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6791C87228CEBD7400033A23 /* XCRemoteSwiftPackageReference "aepsdk-optimize-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FrazierMark/aepsdk-optimize-ios.git";
+			requirement = {
+				branch = dev;
+				kind = branch;
+			};
+		};
+		6791C87528CEBD8100033A23 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FrazierMark/aepsdk-userprofile-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		6791C87828CEBD9200033A23 /* XCRemoteSwiftPackageReference "aepsdk-edgeconsent-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FrazierMark/aepsdk-edgeconsent-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		6791C87B28CEBD9E00033A23 /* XCRemoteSwiftPackageReference "aepsdk-edge-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FrazierMark/aepsdk-edge-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		6791C87E28CEBDAC00033A23 /* XCRemoteSwiftPackageReference "aepsdk-edgeidentity-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FrazierMark/aepsdk-edgeidentity-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		6791C88128CEBDBA00033A23 /* XCRemoteSwiftPackageReference "aepsdk-messaging-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FrazierMark/aepsdk-messaging-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6791C87328CEBD7400033A23 /* AEPOptimize */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6791C87228CEBD7400033A23 /* XCRemoteSwiftPackageReference "aepsdk-optimize-ios" */;
+			productName = AEPOptimize;
+		};
+		6791C87628CEBD8100033A23 /* AEPUserProfile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6791C87528CEBD8100033A23 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */;
+			productName = AEPUserProfile;
+		};
+		6791C87928CEBD9200033A23 /* AEPEdgeConsent */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6791C87828CEBD9200033A23 /* XCRemoteSwiftPackageReference "aepsdk-edgeconsent-ios" */;
+			productName = AEPEdgeConsent;
+		};
+		6791C87C28CEBD9E00033A23 /* AEPEdge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6791C87B28CEBD9E00033A23 /* XCRemoteSwiftPackageReference "aepsdk-edge-ios" */;
+			productName = AEPEdge;
+		};
+		6791C87F28CEBDAC00033A23 /* AEPEdgeIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6791C87E28CEBDAC00033A23 /* XCRemoteSwiftPackageReference "aepsdk-edgeidentity-ios" */;
+			productName = AEPEdgeIdentity;
+		};
+		6791C88228CEBDBA00033A23 /* AEPMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6791C88128CEBDBA00033A23 /* XCRemoteSwiftPackageReference "aepsdk-messaging-ios" */;
+			productName = AEPMessaging;
+		};
+		6791C88528CEBDE000033A23 /* AEPCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AEPCore;
+		};
+		6791C88728CEBDE000033A23 /* AEPIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AEPIdentity;
+		};
+		6791C88928CEBDE000033A23 /* AEPLifecycle */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AEPLifecycle;
+		};
+		6791C88B28CEBDE000033A23 /* AEPServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AEPServices;
+		};
+		6791C88D28CEBDE000033A23 /* AEPSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AEPSignal;
+		};
+		6791C88F28CEBDE500033A23 /* AEPAssurance */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AEPAssurance;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6767658428CEB93B00DB6C85 /* Project object */;
 }
