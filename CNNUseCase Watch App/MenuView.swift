@@ -9,9 +9,6 @@ import SwiftUI
 
 
 struct MenuView: View {
-    @State var items = ["Bananas 🍌🍌", "Apples 🍏🍏", "Peaches 🍑🍑"]
-    
-    // var eventItem = NewsModel.event
 
     var body: some View {
         TabView {

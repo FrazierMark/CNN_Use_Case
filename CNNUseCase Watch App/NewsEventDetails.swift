@@ -6,35 +6,39 @@
 //
 
 import SwiftUI
-import ClockKit
+import AEPCore
+import AEPAssurance
 
 struct DetailView: View {
     var item:NewsEvent
-    @State private var isRatingPresented = false
+    @State private var assuranceSessionUrl: String = "sampleappmarkdeeplink://default?adb_validation_sessionid=b13d7462-7cdb-41b2-a3dd-5ca8ae05cccf"
     @State private var isZooming = false
-    
-    func reloadTimeLine(){
-        // let now = Date()
-        let server = CLKComplicationServer.sharedInstance()
-        if let active = server.activeComplications{
-            for complication in active{
-                server.reloadTimeline(for:complication)
-            }
-        }
-    }
+    @State private var isPresented = false
+
     
     var body: some View {
         ScrollView{
             VStack {
-                HStack {
-                    Text(item.name)
-                        .fontWeight(.heavy)
-                    Spacer()
-                }
+//                HStack {
+//                    Text(item.name)
+//                        .fontWeight(.heavy)
+//                    Spacer()
+//                }
                 Image("\(item.id)_100w")
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(10)
+                    .overlay{
+                        Text(item.name)
+                            .font(.system(size: 10))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 8)
+                            .frame(maxHeight: .infinity, alignment: .bottom)
+                            .padding()
+                    }
+                
                     .onTapGesture{
                         self.isZooming.toggle()
                         WKInterfaceDevice.current().play(.click)
@@ -42,31 +46,60 @@ struct DetailView: View {
                     .sheet(isPresented: $isZooming, content:{
                         ZoomView(item:item)
                     })
-                SaveButton(action:{
-                    reloadTimeLine()
-                    WKInterfaceDevice.current().play(.success)
-                    
-                })
+
                 ScrollView{
                     Text(item.description)
+                        .font(.system(size: 15))
                 }
-//                NavigationLink(destination:RatingsDetailView(item: item)){
-//                    Text("Ratings")
-//                }
+                
+                SaveButton(action:{                    WKInterfaceDevice.current().play(.success)
+                    let event = Event(name: "Save Article For Later", type: "type", source: "source", data: ["platform" : "watchOS"])
+                    MobileCore.dispatch(event: event)
+                    
+                })
                 Button(action:{
-                    self.isRatingPresented = true
+                let event = Event(name: "Share Article Event", type: "type", source: "source", data: ["platform" : "watchOS"])
+                    MobileCore.dispatch(event: event)
                 }){
-                    Text("Ratings")
+                    Text("Share")
                 }
             }.navigationBarTitle(item.name)
+            
+        VStack {
+            Text("MORE ON YOUR IPHONE")
+                .font(.system(size: 11))
+                .multilineTextAlignment(.center)
+            Divider()
+            Spacer()
+            Text("CNN - The full article")
+                .font(.system(size: 12))
+            Spacer()
         }
-        
+            Button(action:{self.isPresented = true
+            callAssurance(pin: "3860")
+        }){
+            Text("Assurance - Connect")
+                .fontWeight(.light)
+                .font(.system(size: 11))
+        }.sheet(isPresented:$isPresented){
+            SettingsView()
+        }
+            Spacer()
+            
+            Button(action:{self.isPresented = true
+        }){
+            Text("Get Consent")
+                .fontWeight(.light)
+                .font(.system(size: 11))
+        }.sheet(isPresented:$isPresented){
+            ConsentView()
+        }
+
+        }
+    }
+    func callAssurance(pin: String) {
+        if let url = URL(string: self.assuranceSessionUrl) {
+            Assurance.startSession(url: url, pin: pin)
+        }
     }
 }
-
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView(item:NewsModel.event[2],selectedItem:.constant(2),selectedRow:.constant(2))
-//    }
-//}
-
