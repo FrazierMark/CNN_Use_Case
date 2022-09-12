@@ -28,15 +28,13 @@ struct NewsEvent:Identifiable{
     var description:String
 }
 
-let testNewsEvent =  NewsEvent(id: 1, name: "Huli Chicken", description: "Our original Hawaiian street food pizza, with Huli Huli chicken, onions, ginger, crushed macadamia nuts, tomato sauce, and cheese on a classic crust.", price: 14.00, rating: 6)
-
 
 struct NewsModel{
    static var menu:[NewsEvent] = [
         NewsEvent(id: 0,name: "Queen's corgis to live with the Duke and Duchess of York", description: "Queen Elizabeth II's corgis will live with the Duke and Duchess of York, Andrew and Sarah, a source close to the Duke of York told CNN on Sunday."),
-        NewsEvent(id: 1,name: "Why major marriers are giving out free iPhones", description: "The unveiling of the latest iPhone 14 lineup earlier this week has already spurred a flurry of new promotions from wireless giants including AT&T, T-Mobile and Verizon."),
-        NewsEvent(id: 2,name: "Quattro Formaggi", description: "A blend of Asiago, Parmesan, buffalo mozzarella, and Gorgonzola on a thin crust."),
-        NewsEvent(id: 3,name: "Longboard", description: "A very long flatbread for vegetarians and vegans, made with olive oil, mushrooms, garlic, fresh ginger, and macadamias, sweetened with lilikoi."),
+        NewsEvent(id: 1,name: "Why major carriers are giving out free iPhones", description: "The unveiling of the latest iPhone 14 lineup earlier this week has already spurred a flurry of new promotions from wireless giants including AT&T, T-Mobile and Verizon."),
+        NewsEvent(id: 2,name: "Border agency chief condems retreets of 'offensive' comments by ex-Trump adviser from official CBP account", description: "The head of US Customs and Border Protection on Saturday condemned several retweets from an official CBP regional Twitter account of 'offensive' tweets made earlier that day by former top advisor in the Trump administration."),
+        NewsEvent(id: 3,name: "The rise and fall of a virtual rapper reignites old questions about art-- with a new twist.", description:"On its surface, the saga of FN Meka appeared to be a cautionary tale about the pitfalls of music powered by artificcial intelligence."),
         NewsEvent(id: 4,name: "The Big Island", description: "A meaty calzone exploding like a volcano. Beef and pork combined with vegetables, pineapple, and a special \"lava sauce\" leaking out the top crater. Definitely share this one."),
         NewsEvent(id: 5,name: "Pepperoni", description: "The New York Classic version. A thin crust with pizza sauce, cheese, and pepperoni."),
         NewsEvent(id: 6,name: "Chicago Deep Dish", description: "The classic deep dish cheese pizza. 2\"Thick and filled with sauce and cheese. "),
