@@ -31,11 +31,11 @@ struct MenuView: View {
 //                        }
 //                    }.listRowBackground(Color.red)
 //                    
-//                    Section(header: Text("Validation")) {
-//                        NavigationLink(destination: AssuranceView().navigationBarTitle("Assurance")) {
-//                            Text("Assurance")
-//                        }
-//                    }.listRowBackground(Color.red)
+                    Section(header: Text("Validation")) {
+                        NavigationLink(destination: AssuranceView().navigationBarTitle("Assurance")) {
+                            Text("Assurance")
+                        }
+                    }.listRowBackground(Color.red)
 //                    
 //                    Section(header: Text("Messaging")) {
 //                        NavigationLink(destination: MessagingView().navigationBarTitle("Messaging")) {

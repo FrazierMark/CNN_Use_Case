@@ -13,8 +13,10 @@ struct MyNewTestApp_Watch_AppApp: App {
     
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            NavigationView {
+            TabView {
                 MenuView()
+                CoreView()
+                AssuranceView()
             }
         }
     }

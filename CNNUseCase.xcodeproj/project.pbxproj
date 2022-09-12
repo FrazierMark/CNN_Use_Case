@@ -33,6 +33,7 @@
 		6791C89A28CEBE6800033A23 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791C89928CEBE6800033A23 /* ButtonStyle.swift */; };
 		6791C89E28CED36F00033A23 /* AssuranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791C89D28CED36F00033A23 /* AssuranceView.swift */; };
 		6791C8A028CED37B00033A23 /* PinCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791C89F28CED37B00033A23 /* PinCodeView.swift */; };
+		6791C8A228CEDD4C00033A23 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791C8A128CEDD4C00033A23 /* NewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		6791C89C28CEC2A500033A23 /* CNNUseCase-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CNNUseCase-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6791C89D28CED36F00033A23 /* AssuranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssuranceView.swift; sourceTree = "<group>"; };
 		6791C89F28CED37B00033A23 /* PinCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeView.swift; sourceTree = "<group>"; };
+		6791C8A128CEDD4C00033A23 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				6791C89928CEBE6800033A23 /* ButtonStyle.swift */,
 				6791C89D28CED36F00033A23 /* AssuranceView.swift */,
 				6791C89F28CED37B00033A23 /* PinCodeView.swift */,
+				6791C8A128CEDD4C00033A23 /* NewsModel.swift */,
 			);
 			path = "CNNUseCase Watch App";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				6767659828CEB93B00DB6C85 /* ContentView.swift in Sources */,
 				6791C8A028CED37B00033A23 /* PinCodeView.swift in Sources */,
 				676765A828CEB97600DB6C85 /* MenuView.swift in Sources */,
+				6791C8A228CEDD4C00033A23 /* NewsModel.swift in Sources */,
 				6791C89828CEBE2F00033A23 /* CoreView.swift in Sources */,
 				6791C89E28CED36F00033A23 /* AssuranceView.swift in Sources */,
 				6791C89A28CEBE6800033A23 /* ButtonStyle.swift in Sources */,

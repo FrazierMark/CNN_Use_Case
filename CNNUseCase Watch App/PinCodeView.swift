@@ -6,7 +6,6 @@
 //
 
 
-
 import Foundation
 import AEPCore
 import AEPAssurance
@@ -25,11 +24,9 @@ struct PinCodeView: View {
 
 
 struct MainView: View {
-
     @State var assuranceSessionUrl: String
     @State var unLocked = false
     
-
     var body: some View {
         VStack {
             if unLocked {
@@ -47,7 +44,6 @@ struct MainView: View {
 struct PincodeScreen: View {
 
     @State var pincode = ""
-    // Hard Coded Pin from Assurance session
     @AppStorage("assurance_pin") var key = "3860"
     @Binding var assuranceSessionUrl: String
     @Binding var unLocked: Bool
@@ -109,7 +105,6 @@ struct PincodeScreen: View {
 
 
     struct PincodeButton: View {
-
         var value: String
         
         @Binding var pincode: String
