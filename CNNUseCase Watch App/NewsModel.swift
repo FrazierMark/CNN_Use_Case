@@ -30,7 +30,7 @@ struct NewsEvent:Identifiable{
 
 
 struct NewsModel{
-   static var menu:[NewsEvent] = [
+   static var event:[NewsEvent] = [
         NewsEvent(id: 0,name: "Queen's corgis to live with the Duke and Duchess of York", description: "Queen Elizabeth II's corgis will live with the Duke and Duchess of York, Andrew and Sarah, a source close to the Duke of York told CNN on Sunday."),
         NewsEvent(id: 1,name: "Why major carriers are giving out free iPhones", description: "The unveiling of the latest iPhone 14 lineup earlier this week has already spurred a flurry of new promotions from wireless giants including AT&T, T-Mobile and Verizon."),
         NewsEvent(id: 2,name: "Border agency chief condems retreets of 'offensive' comments by ex-Trump adviser from official CBP account", description: "The head of US Customs and Border Protection on Saturday condemned several retweets from an official CBP regional Twitter account of 'offensive' tweets made earlier that day by former top advisor in the Trump administration."),
