@@ -10,8 +10,6 @@ import ClockKit
 
 struct DetailView: View {
     var item:NewsEvent
-//    @Binding var selectedItem:Int!
-//    @Binding var selectedRow:Int!
     @State private var isRatingPresented = false
     @State private var isZooming = false
     
@@ -34,6 +32,8 @@ struct DetailView: View {
                     Spacer()
                 }
                 Image("\(item.id)_100w")
+                    .resizable()
+                    .scaledToFit()
                     .cornerRadius(10)
                     .onTapGesture{
                         self.isZooming.toggle()
@@ -45,8 +45,6 @@ struct DetailView: View {
                 SaveButton(action:{
                     reloadTimeLine()
                     WKInterfaceDevice.current().play(.success)
-                  //  self.selectedItem = self.item.id
-                   // self.selectedRow = nil //pop
                     
                 })
                 ScrollView{

@@ -154,11 +154,11 @@
 				6791C8A128CEDD4C00033A23 /* NewsModel.swift */,
 				6791C8A328CEE9B100033A23 /* NewsView.swift */,
 				6791C8A528CEEBC200033A23 /* NewsEventDetails.swift */,
+				6791C8A928CEED8E00033A23 /* ZoomView.swift */,
+				6791C8AB28CEF3D800033A23 /* RowView.swift */,
 				6791C8A728CEED0500033A23 /* SaveButton.swift */,
 				6767659928CEB93C00DB6C85 /* Assets.xcassets */,
 				6767659B28CEB93C00DB6C85 /* Preview Content */,
-				6791C8A928CEED8E00033A23 /* ZoomView.swift */,
-				6791C8AB28CEF3D800033A23 /* RowView.swift */,
 			);
 			path = "CNNUseCase Watch App";
 			sourceTree = "<group>";

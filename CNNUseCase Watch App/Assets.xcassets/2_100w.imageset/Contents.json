@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "2_100w.jpg",
+      "filename" : "BorderAgencyChief@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "2_100w@2x.jpg",
+      "filename" : "BorderAgencyChief@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "2_100w@3x.jpg",
+      "filename" : "BorderAgencyChief@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

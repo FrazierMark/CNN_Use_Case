@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "7_100w.jpg",
+      "filename" : "3 things to watch@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "7_100w@2x.jpg",
+      "filename" : "3 things to watch@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "7_100w@3x.jpg",
+      "filename" : "3 things to watch@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
