@@ -10,13 +10,13 @@ import ClockKit
 
 struct DetailView: View {
     var item:NewsEvent
-    @Binding var selectedItem:Int!
-    @Binding var selectedRow:Int!
+//    @Binding var selectedItem:Int!
+//    @Binding var selectedRow:Int!
     @State private var isRatingPresented = false
     @State private var isZooming = false
     
     func reloadTimeLine(){
-        let now = Date()
+        // let now = Date()
         let server = CLKComplicationServer.sharedInstance()
         if let active = server.activeComplications{
             for complication in active{
@@ -45,8 +45,8 @@ struct DetailView: View {
                 SaveButton(action:{
                     reloadTimeLine()
                     WKInterfaceDevice.current().play(.success)
-                    self.selectedItem = self.item.id
-                    self.selectedRow = nil //pop
+                  //  self.selectedItem = self.item.id
+                   // self.selectedRow = nil //pop
                     
                 })
                 ScrollView{
@@ -66,9 +66,9 @@ struct DetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(item:NewsModel.event[2],selectedItem:.constant(2),selectedRow:.constant(2))
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView(item:NewsModel.event[2],selectedItem:.constant(2),selectedRow:.constant(2))
+//    }
+//}
 

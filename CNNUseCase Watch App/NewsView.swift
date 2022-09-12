@@ -20,7 +20,7 @@ struct NewsView: View {
             List{
                 ForEach(self.eventItem){ item in
                     NavigationLink(
-                        destination:DetailView(item:item,selectedItem: self.$selectedItem, selectedRow: self.$selectedRow),
+                        destination:DetailView(item:item),
                         tag:item.id,
                         selection: self.$selectedRow
                         
